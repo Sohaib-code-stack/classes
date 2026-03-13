@@ -1,12 +1,24 @@
-console.log("Script loaded")
 
-number1 = 100
-number2 = "100"
+btn = document.getElementById("btn")
 
-number2 = Number(number2)
-console.log(number2, typeof number2)
+answer = document.getElementById("answer")
 
-number3 = number2 + 2
-
-console.log(number3)
+btn.onclick = function(){
+    field1 = Number(document.getElementById("field1").value)
+    field2 = Number(document.getElementById("field2").value)
+    field3 = document.getElementById("field3").value
+    
+    if(field3 == "+"){
+        answer.textContent = field1 + field2
+    }
+    else if(field3 == "-"){
+        answer.textContent = field1 - field2
+    }
+    else if(field3 == "*"){
+        answer.textContent = field1 * field2
+    }
+    else if(field3 == "/"){
+        answer.textContent = field1 / field2
+    }
+}
 
