@@ -87,7 +87,6 @@ header p{
 .features{
     padding: 20px;
     height: 350px;
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -102,13 +101,82 @@ header p{
     padding: 20px;
     width: 30%;
     border-radius: 12px;
-    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
 }
 
 .features h2{
     font-size: 25px;
 }
 
-.feature p{
-    font-size: 16px;
+.feature span{
+    font-size: 32px;
+}
+
+.feature-heading{
+    font-weight: bold;
+}
+
+.card{
+    transition: all 0.3s ease;
+
+}
+
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 2px 1px 8px gray;
+}
+
+.services{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-container{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    gap: 25px;
+}
+
+.service{
+    height: 320px;
+    margin-top: 12px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px;
+}
+
+
+.service img{
+    height: 50%;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.service button{
+    background-color: rgb(24, 113, 202);
+    color: white;
+    border:none;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+footer{
+    margin-top: 50px;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
